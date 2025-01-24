@@ -1,2 +1,0 @@
-# xitija.github.io
-Assignments
