@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kshitija's Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      .redirect-notice {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="redirect-notice">
+      <h2 style="color: var(--orange-yellow-crayola)">
+        Please note that the application is currently hosted on a free server,
+        which may result in slightly longer load times initially. <br />Thank
+        you for your patience. You will be redirected to the Url Shortener
+        project. If you are not redirected, click
+        <a
+          style="display: inline"
+          target="_blank"
+          href="https://simple-backend-qfea.onrender.com/api"
+          >here</a
+        >.
+      </h2>
+    </div>
+    <script>
+      (function redirect() {
+        setTimeout(() => {
+          console.log("Redirecting...");
+          window.open("https://simple-backend-qfea.onrender.com/api", "_blank");
+        }, 5000); // Wait 5 seconds and then redirect.
+      })();
+    </script>
+  </body>
+</html>

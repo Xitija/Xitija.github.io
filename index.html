@@ -1,0 +1,2386 @@
+<!--
+
+
+Hit RUN to see this project in action!
+
+Feel free to edit the HTML and CSS to make it your own. You can also check the README.md file to know more.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kshitija's Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              style="border-radius: 20px"
+              src="./assets/avatar.png"
+              alt="Kshitija's avatar"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Kshitija Kadam">Kshitija Kadam</h1>
+
+            <p class="title">Web developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:kshitijakadam04@gmail.com" class="contact-link"
+                  >kshitijakadam04@gmail.com</a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/Xitija"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://twitter.com/xitija_"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/xitija"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+
+            <li class="navbar-item">
+              <button
+                class="navbar-link"
+                data-nav-link
+                onclick="function stop(e) {
+                  window.open(`https://drive.google.com/file/d/1mLxQh2BM88vuu9O_Sc6_btDAOfXVPtVw/view?usp=drive_link`, '_blank');
+                }; stop(event);"
+              >
+                Resume
+              </button>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li> -->
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm Creative Director and UI/UX Designer from Sydney, Australia,
+              working in web development and print media. I enjoy turning
+              complex problems into simple, beautiful and intuitive designs.
+            </p>
+            <!-- <p>
+              My job is to build your website so that it is functional and
+              user-friendly but at the same time attractive. Moreover, I add
+              personal touch to your product and make sure that is eye-catching
+              and easy to use. My aim is to bring across your message and
+              identity in the most creative way. I created web design for many
+              famous brand companies.
+            </p> -->
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">My Skills</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Frontend</h4>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <img
+                      src="./assets/images/technologies/html.svg"
+                      alt="HTML"
+                      title="HTML"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/css.svg"
+                      alt="CSS"
+                      title="CSS"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/react.svg"
+                      alt="React"
+                      title="React"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/redux.svg"
+                      alt="Redux"
+                      title="Redux"
+                      width="40"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend</h4>
+
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <img
+                      src="./assets/images/technologies/nodejs-icon.svg"
+                      alt="node"
+                      title="Node"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/graphql-icon.svg"
+                      alt="graphql-icon"
+                      title="Graphql"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/typeorm.svg"
+                      alt="TypeORM"
+                      title="TypeORM"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/postgresql.svg"
+                      alt="Postgres"
+                      title="Postgres"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/nestjs.svg"
+                      alt="NestJs"
+                      title="NestJs"
+                      width="40"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Languages</h4>
+
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <img
+                      src="./assets/images/technologies/javascript.svg"
+                      alt="Javascript"
+                      title="Javascript"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/typescript.svg"
+                      alt="Typescript"
+                      title="Typescript"
+                      width="40"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Tools</h4>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <img
+                      src="./assets/images/technologies/postman-icon.svg"
+                      alt="Postman"
+                      title="Postman"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/jira.svg"
+                      alt="Jira"
+                      title="Jira"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/git.svg"
+                      alt="Git"
+                      title="Git"
+                      width="40"
+                    />
+                    <img
+                      src="./assets/images/technologies/github-.svg"
+                      alt="Github"
+                      title="Github"
+                      width="40"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <!-- <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li> -->
+
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Javascript</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>React</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Node</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <!-- <li class="select-item">
+                  <button data-select-item>All</button>
+                </li> -->
+
+                <li class="select-item">
+                  <button data-select-item>Javascript</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>React</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Node</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <!-- Javascript Projects -->
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Do you know India Quiz</h3>
+
+                  <p class="blog-text">
+                    Test your knowledge on India. Can you beat the highscore?
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">NodeJS</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Javascript</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/cli-quiz"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://replit.com/@xitija/cli-quiz?embed=true"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Pokemon Quiz</h3>
+
+                  <p class="blog-text">
+                    Test how good you are with the series. Can you beat the
+                    highscore?
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Javascript</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">NodeJS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/cli-pokemon-quiz"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://replit.com/@xitija/assignment-levelOne?embed=true"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Banana Talk</h3>
+
+                  <p class="blog-text">
+                    Translates from English to Banana Language.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Javascript</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Banana-Talk"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-banana-talk.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Shakespearean Language</h3>
+
+                  <p class="blog-text">
+                    Translates from English to Shakespearean.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Javascript</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Shakespearean-Lang"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-shakespearean-lang.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">
+                    Emoji Clothes & Accessories
+                  </h3>
+
+                  <p class="blog-text">
+                    Don't forget to check our Collection!!
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">ReactJS</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Emoji-Clothes-and-Accessories"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-clothes-and-accessories.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Musical Instrument types</h3>
+
+                  <p class="blog-text">
+                    See different types of Musical instruments.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">ReactJS</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Instrument-Types"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-instrument-types.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Cash Register App</h3>
+
+                  <p class="blog-text">
+                    Shows change to be returned in minimum number of notes.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Javascript</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Cash-Register"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-cash-register.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Is your Birthday Lucky?</h3>
+
+                  <p class="blog-text">Check if your Birthday is Lucky.</p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Javascript</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Lucky-Birthday"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-lucky-birthday.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Fun with Triangles</h3>
+
+                  <p class="blog-text">
+                    Operations and Calculations on Triangles.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Javascript</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Fun-with-Triangles"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-triangles-fun.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Palindrome Date</h3>
+
+                  <p class="blog-text">
+                    Checks if the given date is a Palindrome or not.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Javascript</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Palindrome-Date"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-palindrome-date.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Stocks - Profit | Loss</h3>
+
+                  <p class="blog-text">
+                    See your Stocks are in Profit or Loss.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Javascript</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Stocks-Profit-Loss"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-stocks.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="javascript"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Wikipedia Search</h3>
+
+                  <p class="blog-text">
+                    App displays Wikipedia search results.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Javascript</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Wikipedia-Search-App"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-wikipedia-search.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- React Projects -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react"
+              >
+                <a href="https://flipflopcart-xitija.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-projects/flipflop.jpeg"
+                      alt="flipflopcart"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-meta">
+                    <p class="project-category">React</p>
+                    <span class="dot"></span>
+                    <p class="project-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="project-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/ecommerce-app-flipflopkart"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://flipflopcart-xitija.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react"
+              >
+                <a href="https://xitija-video-library.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-projects/arttube.jpg"
+                      alt="arttube"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-meta">
+                    <p class="project-category">React</p>
+                    <span class="dot"></span>
+                    <p class="project-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="project-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/Video-Library"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-video-library.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react"
+              >
+                <a href="https://xitija-css-ocean-library.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-projects/cssocean.jpeg"
+                      alt="cssocean"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-meta">
+                    <p class="project-category">React</p>
+                    <span class="dot"></span>
+                    <p class="project-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="project-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/css-component-library"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-css-ocean-library.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react"
+              >
+                <a href="https://xitija-devsin.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-projects/devsin.jpeg"
+                      alt="devsin"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-meta">
+                    <p class="project-category">React</p>
+                    <span class="dot"></span>
+                    <p class="project-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="project-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/social-media-app-devsin"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-devsin.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react"
+              >
+                <a href="https://xitija-income-expense-tracker.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-projects/expensetracker.jpeg"
+                      alt="expense tracker"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-meta">
+                    <p class="project-category">React</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Redux</p>
+                    <span class="dot"></span>
+                    <p class="project-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="project-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/income-expense-tracker"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-income-expense-tracker.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react"
+              >
+                <a href="https://xitija-fitness-tracker.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-projects/fitnesstracker.jpeg"
+                      alt="fitness tracker"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-meta">
+                    <p class="project-category">React</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Redux</p>
+                    <span class="dot"></span>
+                    <p class="project-category">HTML</p>
+                    <span class="dot"></span>
+                    <p class="project-category">CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/fitness-tracker"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-fitness-tracker.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react"
+              >
+                <a
+                  href="https://xitija-patient-hospital-management.netlify.app/"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-projects/hospital.jpeg"
+                      alt="hospital"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-meta">
+                    <p class="project-category">Redux Toolkit</p>
+                    <span class="dot"></span>
+                    <p class="project-category">HTML & CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/patient-hospital-management"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-patient-hospital-management.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react"
+              >
+                <a href="https://xitija-volunteer-management.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-projects/eventvolunteer.jpeg"
+                      alt="event volunteer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-meta">
+                    <p class="project-category">Redux Toolkit</p>
+                    <span class="dot"></span>
+                    <p class="project-category">HTML & CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/volunteer-management"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-volunteer-management.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="react"
+              >
+                <a
+                  href="https://xitija-student-teacher-management.netlify.app/"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/react-projects/school.jpeg"
+                      alt="school"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-meta">
+                    <p class="project-category">Redux Toolkit</p>
+                    <span class="dot"></span>
+                    <p class="project-category">HTML & CSS</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/student-teacher-management"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://xitija-student-teacher-management.netlify.app/"
+                    >
+                      <img
+                        src="./assets/images/icon-dev.svg"
+                        alt="Web development icon"
+                        title="Live Project"
+                        width="40"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+              <!-- Node Projects -->
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="node"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">URL Shortener APIs</h3>
+
+                  <p class="blog-text">
+                    APIs that enable the creation, management, and tracking of
+                    shortened URLs. Perfect for simplifying long links,
+                    enhancing shareability, and analyzing link performance.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">NestJs - Fastify</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Prisma</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Postgres</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/simple-backend-url-shortner"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a target="_blank" href="/url-shrt-redirect.html">
+                      <img
+                        src="./assets/images/technologies/swagger.svg"
+                        alt="Swagger"
+                        title="Swagger Documentation"
+                        width="35"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="node"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Movie Ratings APIs</h3>
+
+                  <p class="blog-text">
+                    A set of API endpoints that allow users to rate and review
+                    movies. Users also have credentials by signing up.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Express</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongodb</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongoose</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Xitija/UserMovieAPIs"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://documenter.getpostman.com/view/29778371/2sA3JGeivM"
+                    >
+                      <img
+                        src="./assets/images/technologies/postman-api.svg"
+                        alt="Postman"
+                        title="Postman Collection"
+                        width="35"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="node"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Restaurant APIs</h3>
+
+                  <p class="blog-text">
+                    A set of API endpoints that allow users to perform various
+                    actions related to restaurants, such as creating, reading,
+                    updating, and deleting restaurants, managing menus, adding
+                    user reviews, and more.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Express</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongodb</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongoose</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://replit.com/@xitija/Assignment-11#index.js"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://documenter.getpostman.com/view/29778371/2sA3Bj7Yzb"
+                    >
+                      <img
+                        src="./assets/images/technologies/postman-api.svg"
+                        alt="Postman"
+                        title="Postman Collection"
+                        width="35"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="node"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Travel Recommendation APIs</h3>
+
+                  <p class="blog-text">
+                    A set of API endpoints that allow users to discover and
+                    review travel destinations, read and write travel
+                    recommendations, and get information about top-rated and
+                    low-rated destinations.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Express</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongodb</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongoose</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://replit.com/@xitija/Assignment-13#index.js"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://documenter.getpostman.com/view/29778371/2sA3BobXoV"
+                    >
+                      <img
+                        src="./assets/images/technologies/postman-api.svg"
+                        alt="Postman"
+                        title="Postman Collection"
+                        width="35"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="node"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Fitness Tracking APIs</h3>
+
+                  <p class="blog-text">
+                    A comprehensive set of APIs designed to streamline fitness
+                    data collection and management. These APIs enable tracking
+                    workout routines, monitoring health metrics, and analyzing
+                    user progress.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Express</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongodb</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongoose</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://replit.com/@xitija/Assignment-17#index.js"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://documenter.getpostman.com/view/29778371/2sAYBbf9xD"
+                    >
+                      <img
+                        src="./assets/images/technologies/postman-api.svg"
+                        alt="Postman"
+                        title="Postman Collection"
+                        width="35"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="node"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Inventory Management APIs</h3>
+
+                  <p class="blog-text">
+                    APIs designed to help track and manage inventory, update
+                    stock levels, and handle orders efficiently. Perfect for
+                    integrating with e-commerce platforms and warehouse systems
+                    to keep everything organized and up to date.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Express</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongodb</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongoose</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://replit.com/@xitija/Assignment-18#index.js"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://documenter.getpostman.com/view/29778371/2sAYBbf9xL"
+                    >
+                      <img
+                        src="./assets/images/technologies/postman-api.svg"
+                        alt="Postman"
+                        title="Postman Collection"
+                        width="35"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="node"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">School Management APIs</h3>
+
+                  <p class="blog-text">
+                    APIs designed to simplify school operations by managing
+                    student records, classes, and staff information. Ideal for
+                    building applications that enhance administration and
+                    improve the learning experience.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Express</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongodb</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongoose</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://replit.com/@xitija/Assignment-20#index.js"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://documenter.getpostman.com/view/29778371/2sAYBbf9xG"
+                    >
+                      <img
+                        src="./assets/images/technologies/postman-api.svg"
+                        alt="Postman"
+                        title="Postman Collection"
+                        width="35"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="node"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">Hospital Management APIs</h3>
+
+                  <p class="blog-text">
+                    APIs created to streamline hospital operations, including
+                    patient management, and ward management. Perfect for
+                    building applications to enhance healthcare services and
+                    improve operational efficiency.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Express</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongodb</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongoose</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://replit.com/@xitija/Assignment-21#index.js"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://documenter.getpostman.com/view/29778371/2sAYBbf9xJ"
+                    >
+                      <img
+                        src="./assets/images/technologies/postman-api.svg"
+                        alt="Postman"
+                        title="Postman Collection"
+                        width="35"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="blog-post-item project-item"
+                data-filter-item
+                data-category="node"
+              >
+                <div
+                  class="blog-content"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <h3 class="h3 blog-item-title">
+                    Event Volunteer Management APIs
+                  </h3>
+
+                  <p class="blog-text">
+                    APIs designed to simplify managing event volunteers by
+                    handling registrations, schedules, & roles. Ideal for
+                    organizing events efficiently and ensuring seamless
+                    coordination with volunteers.
+                  </p>
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Express</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongodb</p>
+                    <span class="dot"></span>
+                    <p class="blog-category">Mongoose</p>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem">
+                    <a
+                      target="_blank"
+                      href="https://replit.com/@xitija/Assignment-22#index.js"
+                    >
+                      <img
+                        src="./assets/images/technologies/github.svg"
+                        alt="Github"
+                        title="Source Code"
+                        width="32"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://documenter.getpostman.com/view/29778371/2sAYBbfA2g"
+                    >
+                      <img
+                        src="./assets/images/technologies/postman-api.svg"
+                        alt="Postman"
+                        title="Postman Collection"
+                        width="35"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">
+              <a
+                style="color: white"
+                href="https://drive.google.com/file/d/1mLxQh2BM88vuu9O_Sc6_btDAOfXVPtVw/view?usp=drive_link"
+                >Resume Link</a
+              >
+            </h2>
+          </header>
+          <!-- 
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  University school of the arts
+                </h4>
+
+                <span>2007 — 2008</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+                <span>2006 — 2007</span>
+
+                <p class="timeline-text">
+                  Ratione voluptatem sequi nesciunt, facere quisquams facere
+                  menda ossimus, omnis voluptas assumenda est omnis..
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  High school of art and design
+                </h4>
+
+                <span>2002 — 2004</span>
+
+                <p class="timeline-text">
+                  Duis aute irure dolor in reprehenderit in voluptate, quila
+                  voluptas mag odit aut fugit, sed consequuntur magni dolores
+                  eos.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Creative director</h4>
+
+                <span>2015 — Present</span>
+
+                <p class="timeline-text">
+                  Nemo enim ipsam voluptatem blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et qvuas molestias
+                  exceptur.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Art director</h4>
+
+                <span>2013 — 2015</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web designer</h4>
+
+                <span>2010 — 2013</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li>
+            </ol>
+          </section> -->
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <!-- <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
+
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
+
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
+
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
+
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article> -->
+
+        <!--
+        - #CONTACT
+      -->
+
+        <!-- <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article> -->
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
