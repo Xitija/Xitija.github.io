@@ -78,10 +78,10 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
         <div class="sidebar-info_more">
           <div class="separator"></div>
 
-          <ul class="contacts-list">
+          <!-- <ul class="contacts-list">
             <li class="contact-item">
               <div class="icon-box">
-                <!-- <ion-icon name="mail-outline"></ion-icon> -->
+                 <ion-icon name="mail-outline"></ion-icon> 
                 <a
                   href="https://drive.google.com/file/d/1mLxQh2BM88vuu9O_Sc6_btDAOfXVPtVw/view?usp=drive_link"
                   target="_blank"
@@ -93,10 +93,9 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                     width="30"
                   />
                 </a>
-              </div>
-
+              </div> 
               <div class="contact-info">
-                <!-- <p class="contact-title">Email</p> -->
+                 <p class="contact-title">Email</p> 
 
                 <a
                   href="https://drive.google.com/file/d/1mLxQh2BM88vuu9O_Sc6_btDAOfXVPtVw/view?usp=drive_link"
@@ -104,9 +103,17 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                   class="contact-link"
                   >Resume</a
                 >
-              </div>
+              </div> 
             </li>
-          </ul>
+          </ul> -->
+
+          <button class="form-btn"  onclick="function viewResume(e) {
+            window.open(`https://drive.google.com/file/d/1mLxQh2BM88vuu9O_Sc6_btDAOfXVPtVw/view?usp=drive_link`, '_blank');
+          }; viewResume(event);">
+            <!-- <ion-icon name="paper-plane"></ion-icon> -->
+            <img src="./assets/images/resume.png" alt="Resume" width="30" />
+            <span>Resume</span>
+          </button>
 
           <div class="separator"></div>
 

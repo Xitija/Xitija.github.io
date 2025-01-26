@@ -1790,7 +1790,8 @@ textarea.form-input::-webkit-resizer {
 
   .form-btn {
     width: max-content;
-    margin-left: auto;
+    /* margin-left: auto; */
+    margin: auto;
   }
 }
 
