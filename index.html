@@ -107,9 +107,12 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             </li>
           </ul> -->
 
-          <button class="form-btn"  onclick="function viewResume(e) {
+          <button
+            class="form-btn"
+            onclick="function viewResume(e) {
             window.open(`https://drive.google.com/file/d/1mLxQh2BM88vuu9O_Sc6_btDAOfXVPtVw/view?usp=drive_link`, '_blank');
-          }; viewResume(event);">
+          }; viewResume(event);"
+          >
             <!-- <ion-icon name="paper-plane"></ion-icon> -->
             <img src="./assets/images/resume.png" alt="Resume" width="30" />
             <span>Resume</span>
@@ -124,7 +127,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                 target="_blank"
                 class="social-link"
               >
-                <ion-icon name="logo-github"></ion-icon>
+                <ion-icon alt="github" name="logo-github"></ion-icon>
               </a>
             </li>
 
@@ -134,7 +137,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                 target="_blank"
                 class="social-link"
               >
-                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon alt="twitter" name="logo-twitter"></ion-icon>
               </a>
             </li>
 
@@ -144,7 +147,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                 target="_blank"
                 class="social-link"
               >
-                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon alt="linkedin" name="logo-linkedin"></ion-icon>
               </a>
             </li>
             <li class="social-item">
@@ -154,11 +157,11 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                 class="social-link"
               >
                 <img
-                src="./assets/images/technologies/peerlist.svg"
-                alt="Peerlist"
-                title="Peerlist"
-                width="20"
-              />
+                  src="./assets/images/technologies/peerlist.svg"
+                  alt="Peerlist"
+                  title="Peerlist"
+                  width="20"
+                />
               </a>
             </li>
           </ul>
@@ -304,11 +307,11 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                       width="40"
                     />
                     <img
-                    src="./assets/images/technologies/nestjs.svg"
-                    alt="NestJs"
-                    title="NestJs"
-                    width="40"
-                  />
+                      src="./assets/images/technologies/nestjs.svg"
+                      alt="NestJs"
+                      title="NestJs"
+                      width="40"
+                    />
                     <img
                       src="./assets/images/technologies/graphql-icon.svg"
                       alt="graphql-icon"
@@ -2429,11 +2432,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
   -->
     <script
       type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
     ></script>
   </body>
 </html>
